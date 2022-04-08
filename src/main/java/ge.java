@@ -25,7 +25,7 @@ import java.util.SplittableRandom;
 
 public class ge {
 
-
+//
     public static void main(String[] args) throws IOException {
         InputStream is = new FileInputStream("D:\\weather.docx");
         XWPFDocument doc = new XWPFDocument(is);
