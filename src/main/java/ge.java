@@ -54,7 +54,7 @@ public class ge {
 
                 for (XWPFTableCell cell : cells) {
 
-                    while(cell.getText().startsWith("发布时间")){
+                    while(cell.getText().startsWith("布时间")){
                         System.out.println(cell.getText());
                         String[] split1 = cell.getText().split("：");
                         JSONArray json1 = JSONArray.fromObject(split1 );
@@ -79,7 +79,7 @@ public class ge {
                         System.out.println(ab);
                         System.out.println(cd);
                         System.out.println(ef);
-                        //System.out.println(cell.getText());
+                        System.out.println(cell.getText());
                         String[] split1 = ab.split("：");
                         String[] split2 = cd.split("：");
                         String[] split3 = ef.split("：");
