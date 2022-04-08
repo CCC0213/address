@@ -44,7 +44,7 @@ public class ge {
         List<XWPFTableCell> cells;
 
         for (XWPFTable table : tables) {
-            //表格属性
+            //格属性
             CTTblPr pr = table.getCTTbl().getTblPr();
             //获取表格对应的行
             rows = table.getRows();
