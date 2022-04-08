@@ -54,7 +54,7 @@ public class ge {
 
                 for (XWPFTableCell cell : cells) {
 
-                    while(cell.getText().startsWith("发布时间")){
+                    while(cell.getText().startsWith("布时间")){
                         System.out.println(cell.getText());
                         String[] split1 = cell.getText().split("：");
                         JSONArray json1 = JSONArray.fromObject(split1 );
