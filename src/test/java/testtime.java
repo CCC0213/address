@@ -13,6 +13,8 @@ public class testtime {
         //System.out.print(str2.compareTo(str1));
         long time1 = sdf.parse(str1).getTime();
         long time2 = sdf.parse(str2).getTime();
+        System.out.println(time1);
+        System.out.println(time2);
         System.out.print(time2>time1);
 
     }
