@@ -10,15 +10,21 @@ public class testtime {
         String str2="20220513103000";
 
         //System.out.print(str2.compareTo(str1));
-        Boolean bl = minuteComper(str1,str2);
+        Boolean bl = minuteComperString(str1,str2);
         System.out.print(bl);
 
     }
 
-    public static Boolean minuteComper(String str1, String str2) throws ParseException {
+    public static Boolean minuteComperString(String str1, String str2) {
         SimpleDateFormat sdf =new SimpleDateFormat("yyyyMMddHHmmss");
-        long time1 = sdf.parse(str1).getTime();
-        long time2 = sdf.parse(str2).getTime();
+        long time1 = 0;
+        long time2 = 0;
+        try {
+            time1 = sdf.parse(str1).getTime();
+            time2 = sdf.parse(str2).getTime();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         Boolean bl = time1>time2;
         return bl;
     }
