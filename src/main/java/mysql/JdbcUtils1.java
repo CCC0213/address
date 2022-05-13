@@ -32,8 +32,6 @@ public class JdbcUtils1 {
         } catch (Exception e) {
            // logger.error("ERROR:", e);//错误异常完整写入日志文件
         }
-
-
     }
 
     //获得连接池

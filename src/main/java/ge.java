@@ -33,10 +33,10 @@ public class ge {
 
             for (XWPFParagraph para : paras) {
                 //当前段落的属性
-                while(para.getText().startsWith("本场天气")){
+                //while(para.getText().startsWith("本场天气")){
                     System.out.println(para.getText());
-                    break;
-                }
+                //    break;
+                //}
             }
 
         List<XWPFTable> tables = doc.getTables();
@@ -54,13 +54,13 @@ public class ge {
 
                 for (XWPFTableCell cell : cells) {
 
-                    while(cell.getText().startsWith("布时间")){
+                    //while(cell.getText().startsWith("布时间")){
                         System.out.println(cell.getText());
                         String[] split1 = cell.getText().split("：");
                         JSONArray json1 = JSONArray.fromObject(split1 );
                         System.out.println(json1);
-                        break;
-                    }
+                      //  break;
+                    //}
                 }
                 for (XWPFTableCell cell : cells) {
 
